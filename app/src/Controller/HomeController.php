@@ -16,11 +16,7 @@ class HomeController extends AbstractController
      */
     public function home()
     {
-        $number = random_int(0, 100);
-
-        return $this->render('home.html.twig', [
-            'number' => $number,
-        ]);
+        return $this->render('home.html.twig', []);
     }
 
     /**
@@ -28,11 +24,7 @@ class HomeController extends AbstractController
      */
     public function enterCodes()
     {
-        $number = random_int(0, 100);
-
-        return $this->render('enter-code.html.twig', [
-            'number' => $number,
-        ]);
+        return $this->render('enter-code.html.twig', []);
     }
 
 
@@ -41,10 +33,6 @@ class HomeController extends AbstractController
      */
     public function confirmation()
     {
-
-        $number = random_int(0, 100);
-        return $this->render('base.html.twig', [
-            'number' => $number,
-        ]);
+        return $this->render('base.html.twig', []);
     }
 }
